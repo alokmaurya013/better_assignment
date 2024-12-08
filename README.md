@@ -1,7 +1,7 @@
 # React Formik Application
 Live URL:https://betteralok.netlify.app/
 ## How to Run the Project
-1. Clone the repository: `git clone <repo-url>`
+1. Clone the repository: `git clone https://github.com/alokmaurya013/better_assignment`
 2. Navigate to the project folder: `cd better_react`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
