@@ -1,0 +1,90 @@
+/* Ensure the html and body take up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This will make the content area flexible and allow scrolling if needed */
+.app-content {
+  flex: 1;
+  overflow-y: auto; /* Allow vertical scrolling when content overflows */
+}
+
+/* App container styling */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 120%;
+}
+
+/* Styles for the main content area (header, logo, etc.) */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0; /* Sticks the footer to the bottom */
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+}
