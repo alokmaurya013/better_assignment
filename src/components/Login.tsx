@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import "../styles/login.css";  // Custom styles for the form
+import "../styles/login.css"; 
 
 interface LoginProps {
-  onLogin: () => void;  // Prop to handle login success
+  onLogin: () => void;  
 }
 
 const Login: React.FC<LoginProps> = ({ onLogin }) => {
   const [successMessage, setSuccessMessage] = useState<string>("");
-  const navigate = useNavigate(); // Used for redirecting after successful login
+  const navigate = useNavigate(); 
 
   return (
     <div className="login-container">
@@ -28,12 +28,11 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
             localStorage.setItem("rememberedEmail", values.email);
           }
 
-          // Simulate successful login
           setTimeout(() => {
             setSuccessMessage("Login Successful");
             setSubmitting(false);
-            onLogin();  // Call the onLogin function passed as a prop
-            navigate("/home");  // Redirect to home after login
+            onLogin();  
+            navigate("/home");  
           }, 500);
         }}
       >

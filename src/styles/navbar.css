@@ -1,4 +1,4 @@
-/* Global styles for Navbar */
+
 .navbar {
     background-color: #333;
     color: white;
@@ -50,7 +50,6 @@
     background-color: #cc0000;
   }
   
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
@@ -79,7 +78,7 @@
     }
   }
   
-  /* Styles for mobile screens */
+
   @media (max-width: 480px) {
     .navbar h1 {
       font-size: 1.4rem;

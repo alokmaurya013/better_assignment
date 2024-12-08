@@ -1,4 +1,4 @@
-/* Footer container styling */
+
 .footer {
     background-color: #333;
     color: white;
@@ -6,7 +6,7 @@
     padding: 20px 0;
     width: 100%;
     position: relative;
-    bottom: 0; /* Ensure the footer is at the bottom of the page */
+    bottom: 0;
   }
   
   .footer p {
@@ -15,7 +15,6 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Responsive Design */
   @media (max-width: 480px) {
     .footer p {
       font-size: 0.9rem;

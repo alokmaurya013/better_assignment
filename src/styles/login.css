@@ -1,4 +1,4 @@
-/* General container styles for the login page */
+
 .login-container {
     max-width: 400px;
     margin: 50px auto;
@@ -14,8 +14,7 @@
     font-size: 2rem;
     color: #333;
   }
-  
-  /* Form Group Styling */
+
   .form-group {
     margin-bottom: 15px;
   }

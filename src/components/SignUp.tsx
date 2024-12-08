@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { useNavigate } from "react-router-dom";  // Import useNavigate hook
-import "../styles/signup.css";  // Custom styles for the signup form
-import Password from "./Password";  // Assuming you have a custom Password component
+import { useNavigate } from "react-router-dom"; 
+import "../styles/signup.css";  
+import Password from "./Password"; 
 
 const SignUp: React.FC = () => {
   const [successMessage, setSuccessMessage] = useState<string>("");
-  const navigate = useNavigate();  // Initialize navigate hook
+  const navigate = useNavigate(); 
 
   return (
     <div className="signup-container">
@@ -26,7 +26,7 @@ const SignUp: React.FC = () => {
           setTimeout(() => {
             setSuccessMessage("Sign Up Successful");
             setSubmitting(false);
-            navigate("/login");  // Redirect to login page after successful signup
+            navigate("/login"); 
           }, 500);
         }}
       >

@@ -1,14 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/home.css";  // Import custom styles for the home page
+import "../styles/home.css";  
 
 const Home: React.FC = () => {
-  const navigate = useNavigate(); // For navigation, e.g., to logout or other routes
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
-    // Clear any saved data (e.g., from localStorage or sessionStorage)
     localStorage.removeItem("rememberedEmail");
-    navigate("/login"); // Redirect to login page after logout
+    navigate("/login"); 
   };
 
   return (

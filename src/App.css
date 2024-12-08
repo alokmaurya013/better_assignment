@@ -1,4 +1,4 @@
-/* Ensure the html and body take up full height */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -6,20 +6,16 @@ html, body {
   flex-direction: column;
 }
 
-/* This will make the content area flexible and allow scrolling if needed */
 .app-content {
   flex: 1;
-  overflow-y: auto; /* Allow vertical scrolling when content overflows */
+  overflow-y: auto; 
 }
 
-/* App container styling */
 .app {
   display: flex;
   flex-direction: column;
   height: 120%;
 }
-
-/* Styles for the main content area (header, logo, etc.) */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -51,7 +47,6 @@ html, body {
   }
 }
 
-/* Footer styles */
 footer {
   background-color: #333;
   color: white;
@@ -59,7 +54,7 @@ footer {
   text-align: center;
   width: 100%;
   position: relative;
-  bottom: 0; /* Sticks the footer to the bottom */
+  bottom: 0; 
 }
 
 footer p {
@@ -68,7 +63,6 @@ footer p {
   font-family: Arial, sans-serif;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .App-logo {
     height: 30vmin;
